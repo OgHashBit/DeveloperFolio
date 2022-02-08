@@ -61,7 +61,7 @@ const Contact = () => {
 
   return (
     <section className="contact" name="contact" id="contact">
-      <Heading text="Contact" style={{ marginBottom: "3rem" }} />
+      <Heading text="Claim" style={{ marginBottom: "3rem" }} />
       <div className="content">
         <div className="left">
           <img src={shakeImage} alt="shake hands" />
@@ -77,11 +77,11 @@ const Contact = () => {
               required
             />
             <textarea
-              name="message"
+              name="Name/Delivery address"
               required
               value={values.message}
               onChange={handleChange}
-              placeholder="Message"
+              placeholder="Delivery"
             ></textarea>
             <Button
               text={loading ? "Sending..." : "Send"}
@@ -90,7 +90,7 @@ const Contact = () => {
             />
             {notification && (
               <span style={{ color: "green", marginTop: "1rem" }}>
-                Thanks, I will reply ASAP :)
+                Recieved! Don't forget to confirm transaction in wallet.:)
               </span>
             )}
           </form>
