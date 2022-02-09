@@ -81,7 +81,7 @@ const Contact = () => {
               required
               value={values.message}
               onChange={handleChange}
-              placeholder="Delivery"
+              placeholder="Delivery information"
             ></textarea>
             <Button
               text={loading ? "Sending..." : "Send"}
